@@ -1,0 +1,28 @@
+{
+  "name": "ngx-observe",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Nils Melhorn <mail@nils-mehlhorn.de> (https://nils-mehlhorn.de)",
+  "description": "Angular Structural Directive for Observables",
+  "homepage": "https://github.com/nilsmehlhorn/ngx-observe",
+  "keywords": [
+    "rxjs",
+    "angular",
+    "typescript",
+    "javascript",
+    "loading",
+    "directive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nilsmehlhorn/ngx-observe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nilsmehlhorn/ngx-observe/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.0.5",
+    "@angular/core": "^9.0.5",
+    "tslib": "^1.10.0"
+  }
+}

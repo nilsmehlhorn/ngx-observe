@@ -1,0 +1,14 @@
+{
+  "packageFiles": [
+    {
+      "filename": "projects/ngx-observe/package.json",
+      "type": "json"
+    }
+  ],
+  "bumpFiles": [
+    {
+      "filename": "projects/ngx-observe/package.json",
+      "type": "json"
+    }
+  ]
+}

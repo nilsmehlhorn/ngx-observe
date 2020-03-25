@@ -19,10 +19,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-observe": [
+        "dist/ngx-observe/ngx-observe",
+        "dist/ngx-observe"
+      ]
+    },
+    "removeComments": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "annotateForClosureCompiler": false
   }
 }
