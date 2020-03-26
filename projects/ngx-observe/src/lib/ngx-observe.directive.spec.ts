@@ -133,6 +133,27 @@ describe('ObserveDirective', () => {
     expect(fixture.nativeElement.textContent.trim()).toEqual('Other Error')
   })
 
+  it('should throw for illegal before-template', () => {
+    createComponent(`
+        <span id="next-value" *ngxObserve="value$; before condition;"></span>
+      `)
+    expect(() => fixture.detectChanges()).toThrowMatching(e => e.message.startsWith('ngxObserveBefore'))
+  })
+
+  it('should throw for illegal next-template', () => {
+    createComponent(`
+        <span id="next-value" *ngxObserve="value$; next condition;"></span>
+      `)
+    expect(() => fixture.detectChanges()).toThrowMatching(e => e.message.startsWith('ngxObserveNext'))
+  })
+
+  it('should throw for illegal error-template', () => {
+    createComponent(`
+        <span id="next-value" *ngxObserve="value$; error condition;"></span>
+      `)
+    expect(() => fixture.detectChanges()).toThrowMatching(e => e.message.startsWith('ngxObserveError'))
+  })
+
   it('should wait for OnInit to subscribe', () => {
     createComponent()
     const sink = new BehaviorSubject('Success')
