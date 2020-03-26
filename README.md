@@ -4,9 +4,11 @@
 &nbsp;
 [![codecov-badge](https://codecov.io/gh/nilsmehlhorn/ngx-observe/branch/master/graph/badge.svg)](https://codecov.io/gh/nilsmehlhorn/ngx-observe)
 
-ngx-observe is an Angular structural directive with first-class support for observables.
+ngx-observe is an Angular structural directive with first-class support for observables & OnPush-ChangeDetection.
 
 ⚡ [Example StackBlitz](https://stackblitz.com/edit/ngx-observe-example)
+
+You can find an in-depth explanation [here](https://nils-mehlhorn.de/posts/angular-observable-directive/).
 
 ## Installation
 
@@ -30,9 +32,12 @@ import { NgxObserveModule } from 'ngx-observe';
 export class AppModule { }
 ```
 
-Bind observable with [Angular microsyntax](https://angular.io/guide/structural-directives#microsyntax):
+Bind observable with [Angular microsyntax](https://angular.io/guide/structural-directives#microsyntax). You might also then configure your component to use OnPush-ChangeDetection.
 ```typescript
-@Component({...})
+@Component({
+  ...
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
 export class AppComponent  {
   users$: Observable<User>
 
