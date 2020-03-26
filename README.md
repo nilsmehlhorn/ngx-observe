@@ -4,7 +4,12 @@
 &nbsp;
 [![codecov-badge](https://codecov.io/gh/nilsmehlhorn/ngx-observe/branch/master/graph/badge.svg)](https://codecov.io/gh/nilsmehlhorn/ngx-observe)
 
-ngx-observe is an Angular structural directive with first-class support for observables & OnPush-ChangeDetection.
+ngx-observe is an Angular structural directive with first-class support for observables.
+
+🧩 designated loading & error templates
+⚠️ access to errors
+✅ support for falsy values
+🚀 OnPush ready
 
 ⚡ [Example StackBlitz](https://stackblitz.com/edit/ngx-observe-example)
 
