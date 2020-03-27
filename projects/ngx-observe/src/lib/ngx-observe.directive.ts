@@ -9,8 +9,8 @@ import {
   ViewContainerRef,
   ɵstringify as stringify
 } from '@angular/core'
-import {AsyncSubject, defer, Observable, Subject} from 'rxjs'
-import {concatMapTo, takeUntil} from 'rxjs/operators'
+import {AsyncSubject, Observable, Subject} from 'rxjs'
+import {concatMap, takeUntil} from 'rxjs/operators'
 
 function assertTemplate(property: string, templateRef: TemplateRef<any> | null): void {
   const isTemplateRefOrNull = !!(!templateRef || templateRef.createEmbeddedView)
@@ -72,17 +72,15 @@ export class NgxObserveDirective<T> implements OnDestroy, OnInit {
         this.beforeViewRef = this.view.createEmbeddedView(this.beforeTemplateRef)
       }
       this.init.pipe(
-        concatMapTo(source.pipe(
-          (o) => defer(() => {
-            if (this.beforeTemplateRef) {
-              this.view.clear()
-              this.nextViewRef = undefined
-              this.errorViewRef = undefined
-              this.beforeViewRef = this.view.createEmbeddedView(this.beforeTemplateRef)
-            }
-            return o
-          })
-        )),
+        concatMap(() => {
+          if (this.beforeTemplateRef) {
+            this.view.clear()
+            this.nextViewRef = undefined
+            this.errorViewRef = undefined
+            this.beforeViewRef = this.view.createEmbeddedView(this.beforeTemplateRef)
+          }
+          return source
+        }),
         takeUntil(this.unsubscribe)
       ).subscribe(value => {
         this.view.clear()
