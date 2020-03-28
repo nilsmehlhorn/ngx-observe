@@ -11,7 +11,7 @@ ngx-observe is an Angular structural directive with first-class support for obse
 ✅ support for falsy values
 🚀 OnPush ready
 
-⚡ [Example StackBlitz](https://stackblitz.com/edit/ngx-observe-example)
+⚡ [Example StackBlitz](https://stackblitz.com/github/nilsmehlhorn/ngx-observe-example)
 
 You can find an in-depth explanation [here](https://nils-mehlhorn.de/posts/angular-observable-directive/).
 
