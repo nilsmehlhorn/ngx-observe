@@ -19,7 +19,7 @@ function assertTemplate(property: string, templateRef: TemplateRef<any> | null):
   }
 }
 
-export class ObserveContext<T> {
+export class ObserveContext<T = unknown> {
   $implicit: T
   ngxObserve: T
 
@@ -40,7 +40,11 @@ export class ErrorContext {
 @Directive({
   selector: '[ngxObserve]'
 })
-export class NgxObserveDirective<T> implements OnDestroy, OnInit {
+export class NgxObserve<T = unknown> implements OnDestroy, OnInit {
+
+  // tslint:disable-next-line:variable-name
+  static ngTemplateGuard_ngxObserve: 'binding'
+
   private nextTemplateRef: TemplateRef<ObserveContext<T>>
   private errorTemplateRef: TemplateRef<ErrorContext>
   private beforeTemplateRef: TemplateRef<undefined>
@@ -130,6 +134,10 @@ export class NgxObserveDirective<T> implements OnDestroy, OnInit {
       this.nextViewRef = this.view.createEmbeddedView(this.nextTemplateRef, this.nextViewRef.context)
       this.changes.markForCheck()
     }
+  }
+
+  static ngTemplateContextGuard<T>(dir: NgxObserve<T>, ctx: any): ctx is ObserveContext<NonNullable<T>> {
+    return true
   }
 
   ngOnDestroy() {

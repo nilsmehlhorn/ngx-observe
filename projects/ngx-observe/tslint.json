@@ -12,6 +12,7 @@
       "element",
       "ngx",
       "kebab-case"
-    ]
+    ],
+    "directive-class-suffix": false
   }
 }
