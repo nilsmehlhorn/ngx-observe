@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/nilsmehlhorn/ngx-observe/compare/v1.1.0...v1.1.1) (2020-11-13)
+
+
+### Bug Fixes
+
+* more permissive context narrowing ([7d66681](https://github.com/nilsmehlhorn/ngx-observe/commit/7d666814e0c83dc71d1605047641ba36fc983392))
+
 ### [1.1.1-context.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v1.1.0...v1.1.1-context.0) (2020-10-29)
 
 
