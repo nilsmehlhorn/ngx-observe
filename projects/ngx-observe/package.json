@@ -20,9 +20,11 @@
   "bugs": {
     "url": "https://github.com/nilsmehlhorn/ngx-observe/issues"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "peerDependencies": {
     "@angular/common": "^9.0.5",
-    "@angular/core": "^9.0.5",
-    "tslib": "^1.10.0"
+    "@angular/core": "^9.0.5"
   }
 }
