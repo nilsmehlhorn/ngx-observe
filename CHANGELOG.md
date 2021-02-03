@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v1.1.1...v2.0.0) (2021-02-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Angular 10
+
+* **deps:** update to angular 10 ([#7](https://github.com/nilsmehlhorn/ngx-observe/issues/7)) ([94f5204](https://github.com/nilsmehlhorn/ngx-observe/commit/94f52043bb7c9ed8921fb7dab150922fdfdf0f26))
+
 ### [1.1.1](https://github.com/nilsmehlhorn/ngx-observe/compare/v1.1.0...v1.1.1) (2020-11-13)
 
 
