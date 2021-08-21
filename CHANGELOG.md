@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v3.0.0...v4.0.0) (2021-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Angular 12
+
+### build
+
+* update to angular 12 ([7d232a0](https://github.com/nilsmehlhorn/ngx-observe/commit/7d232a0e58c7257e11735875202dcb5376e6dbb6))
+
 ## [3.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v2.0.0...v3.0.0) (2021-02-03)
 
 
