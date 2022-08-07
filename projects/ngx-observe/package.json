@@ -1,6 +1,6 @@
 {
   "name": "ngx-observe",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "license": "MIT",
   "author": "Nils Melhorn <mail@nils-mehlhorn.de> (https://nils-mehlhorn.de)",
   "description": "Angular Structural Directive for Observables",
