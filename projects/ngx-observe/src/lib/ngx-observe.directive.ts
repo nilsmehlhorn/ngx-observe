@@ -40,7 +40,7 @@ export class ErrorContext {
 @Directive({
   selector: '[ngxObserve]'
 })
-export class NgxObserve<T = any> implements OnDestroy, OnInit {
+export class NgxObserveDirective<T = any> implements OnDestroy, OnInit {
 
   private nextTemplateRef: TemplateRef<ObserveContext<T>>
   private errorTemplateRef: TemplateRef<ErrorContext>
@@ -133,7 +133,7 @@ export class NgxObserve<T = any> implements OnDestroy, OnInit {
     }
   }
 
-  static ngTemplateContextGuard<T>(dir: NgxObserve<T>, ctx: any): ctx is ObserveContext<T> {
+  static ngTemplateContextGuard<T>(dir: NgxObserveDirective<T>, ctx: any): ctx is ObserveContext<T> {
     return true
   }
 

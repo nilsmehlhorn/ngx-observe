@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core'
-import {NgxObserve} from './ngx-observe.directive'
+import {NgxObserveDirective} from './ngx-observe.directive'
 
 @NgModule({
-  declarations: [NgxObserve],
+  declarations: [NgxObserveDirective],
   imports: [],
-  exports: [NgxObserve]
+  exports: [NgxObserveDirective]
 })
 export class NgxObserveModule {
 }
