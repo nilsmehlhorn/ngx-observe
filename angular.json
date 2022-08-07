@@ -30,21 +30,20 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/ngx-observe/tsconfig.lib.json",
-              "projects/ngx-observe/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/ngx-observe/**/*.ts",
+              "projects/ngx-observe/**/*.html"
             ]
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
-    "analytics": "16f8de49-2a74-4070-be69-18b57b4efafc"
+    "analytics": "16f8de49-2a74-4070-be69-18b57b4efafc",
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "defaultProject": "ngx-observe"
 }
