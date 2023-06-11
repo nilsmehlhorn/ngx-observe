@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v6.0.0...v7.0.0) (2023-06-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Angular 15
+
+### build
+
+* **deps:** update to angular 15 ([#39](https://github.com/nilsmehlhorn/ngx-observe/issues/39)) ([3f4ce6b](https://github.com/nilsmehlhorn/ngx-observe/commit/3f4ce6bf8862b01597aff0af45e33db1f75b077c))
+
 ## [6.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v5.0.0...v6.0.0) (2022-08-07)
 
 
