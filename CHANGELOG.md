@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.0.1](https://github.com/nilsmehlhorn/ngx-observe/compare/v10.0.1...v11.0.1) (2025-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to standalone directive
+* update to angular 19
+
+### Features
+
+* migrate to standalone directive ([1f18e1d](https://github.com/nilsmehlhorn/ngx-observe/commit/1f18e1d5e160506a6de09f6aae3befe9661c5498))
+
+
+### build
+
+* update to angular 19 ([e85ba38](https://github.com/nilsmehlhorn/ngx-observe/commit/e85ba38054675dfe065abeb81d4f23f2cdc8e854))
+
 ## [11.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v10.0.0...v11.0.0) (2025-04-20)
 
 ### ⚠ BREAKING CHANGES
