@@ -23,24 +23,16 @@ npm i ngx-observe
 
 ## Usage
 
-Import `NgxObserveModule`:
-```typescript
-import { NgxObserveModule } from 'ngx-observe';
-
-@NgModule({
-  imports: [
-    ...
-    NgxObserveModule 
-  ],
-  ...
-})
-export class AppModule { }
-```
+Import `NgxObserveDirective` in your component or module
 
 Bind observable with [Angular microsyntax](https://angular.io/guide/structural-directives#microsyntax). You might also then configure your component to use OnPush-ChangeDetection.
+
 ```typescript
 @Component({
-  ...
+  // ...
+  imports: [
+    NgxObserveDirective 
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent  {
