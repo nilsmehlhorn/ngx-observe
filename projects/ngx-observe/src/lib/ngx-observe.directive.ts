@@ -39,7 +39,7 @@ export class ErrorContext {
 
 @Directive({
     selector: '[ngxObserve]',
-    standalone: false
+    standalone: true
 })
 export class NgxObserveDirective<T = any> implements OnDestroy, OnInit {
 

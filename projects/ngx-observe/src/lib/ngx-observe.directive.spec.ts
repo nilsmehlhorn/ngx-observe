@@ -2,7 +2,7 @@ import {Component, DebugElement} from '@angular/core'
 import {ComponentFixture, TestBed} from '@angular/core/testing'
 import {By} from '@angular/platform-browser'
 import {BehaviorSubject, defer, Observable, of, Subject, throwError} from 'rxjs'
-import {NgxObserveModule} from './ngx-observe.module'
+import { NgxObserveDirective } from './ngx-observe.directive'
 
 @Component({
     selector: 'ngx-test-component',
@@ -17,14 +17,15 @@ import {NgxObserveModule} from './ngx-observe.module'
       <span id="error-value">{{ error }}</span>
     </ng-template>
   `,
-    standalone: false
+    standalone: true,
+    imports: [NgxObserveDirective]
 })
 class TestComponent {
   value$: Observable<string> | undefined
   condition = true
 }
 
-describe('ObserveDirective', () => {
+describe('NgxObserveDirective', () => {
 
   let fixture: ComponentFixture<TestComponent>
   let component: TestComponent
@@ -32,8 +33,7 @@ describe('ObserveDirective', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [NgxObserveModule],
-      declarations: [
+      imports: [
         TestComponent
       ]
     })

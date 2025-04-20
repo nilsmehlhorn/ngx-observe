@@ -3,4 +3,3 @@
  */
 
 export * from './lib/ngx-observe.directive'
-export * from './lib/ngx-observe.module'
