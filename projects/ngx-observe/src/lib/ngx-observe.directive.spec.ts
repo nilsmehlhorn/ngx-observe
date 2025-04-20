@@ -5,8 +5,8 @@ import {BehaviorSubject, defer, Observable, of, Subject, throwError} from 'rxjs'
 import {NgxObserveModule} from './ngx-observe.module'
 
 @Component({
-  selector: 'ngx-test-component',
-  template: `
+    selector: 'ngx-test-component',
+    template: `
     <span id="next-value" *ngxObserve="value$ as value; before loading; error error;">
       {{ value }}
     </span>
@@ -16,7 +16,8 @@ import {NgxObserveModule} from './ngx-observe.module'
     <ng-template #error let-error>
       <span id="error-value">{{ error }}</span>
     </ng-template>
-  `
+  `,
+    standalone: false
 })
 class TestComponent {
   value$: Observable<string> | undefined
