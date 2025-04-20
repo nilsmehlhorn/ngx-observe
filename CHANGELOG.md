@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v8.0.0...v9.0.0) (2025-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to angular 17
+
+### build
+
+* update to angular 17 ([8228c9c](https://github.com/nilsmehlhorn/ngx-observe/commit/8228c9c9e3781c99d27837829e8c4042ecc8d30a))
+
 ## [8.0.0](https://github.com/nilsmehlhorn/ngx-observe/compare/v7.0.0...v8.0.0) (2023-06-11)
 
 
